@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.5s, color 0.5s;
+}
+
+.container {
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--btn);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Light theme default */
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --btn: #007BFF;
+  --btn-hover: #0056b3;
+}
+
+/* Dark theme */
+body.dark {
+  --bg: #1f1f1f;
+  --text: #f0f0f0;
+  --btn: #f39c12;
+  --btn-hover: #d68910;
+}

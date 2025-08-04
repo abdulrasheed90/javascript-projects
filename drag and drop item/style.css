@@ -1,0 +1,51 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f3f6;
+  padding: 40px;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.dropzones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  padding: 20px;
+  width: 120px;
+  background: #007BFF;
+  color: white;
+  border-radius: 8px;
+  cursor: grab;
+  user-select: none;
+}
+
+.dropzone {
+  width: 160px;
+  height: 120px;
+  background: #f0f0f0;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.dropzone.hovered {
+  background: #d1ecf1;
+  border-color: #17a2b8;
+}
